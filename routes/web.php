@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\TodoList;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', TodoList::class);
